@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchProducts } from '../features/products/productSlice';
 import ProductCard from '../components/productCard';
+import { Container, Row, Col, Form } from 'react-bootstrap';
 
 function ProductList() {
   const dispatch = useDispatch();
