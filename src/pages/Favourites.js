@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFavourite } from '../features/favourites/favouriteSlice';
 import ProductCard from '../components/productCard';
+import { Container, Row, Col, Alert } from 'react-bootstrap';
 
 const Favourites = () => {
   const favourites = useSelector(state => state.favourites);
